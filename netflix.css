@@ -16,13 +16,14 @@ body{
 
 .backgroundContainer{
     background-image: url("./bannerImage.jpg");
-    filter: blur(16px);
-    height: 100vh;
+    filter: blur(25px);
+    height: 186vh;
     position: relative;
 }
 
 .pinkOverlay{
-    background-color: rgba(104, 3, 20, 0.404);
+    /* background-color: rgba(104, 3, 20, 0.404); */
+    background-color: rgba(49, 29, 39, 0.58);
     height: 100%;
     width: 100%;
 }
@@ -157,13 +158,14 @@ nav{
 
 .bannerContainer h2{
     font-size: 4rem;
-    width: 50%;
+    width: 60%;
     text-align: center;
 }
 
 .bannerContainer h4{
-    font-size: 1.5rem;
-    margin: 20px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0px;
 }
 
 .bannerContainer p{
@@ -205,30 +207,49 @@ nav{
 }
 
 .carouselSection,
-.planSection{
+.planSection,
+.reasonToJoinContainer{
     /* border: 2px solid red; */
     color: white;
 }
 
-.carouselSection h2,
+.carouselSection h2{
+    /* border: 2px solid red; */
+    margin-left: 3.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.55rem;
+    color: #B9ACAE;
+}
+
+.reasonToJoinSection h2{
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    font-size: 1.3rem;
+    font-weight: 480;
+    margin-left: 55px;
+    color: white;
+}
+
 .planSection h2{
     /* border: 2px solid red; */
     margin-left: 5rem;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    margin-left: 55px;
 }
 
 .carouselCardContainer,
-.plansContainer{
+.plansContainer,
+.reasonToJoinContainer{
     /* border: 2px solid green; */
     height: 100%;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     margin: 2rem auto;
 }
 
 .carouselCard{
-    width: 12%;
+    width: 13%;
     /* border: 2px solid yellow; */
     height: 40vh;
     border-radius: 20px;
@@ -237,6 +258,7 @@ nav{
 
 .carouselNumberContainer{
     position: absolute;
+    font-weight: 1000;
     left: -20px;
 }
 
@@ -258,8 +280,72 @@ nav{
     border-radius: 20px;
 }
 
-.planCard{
-    border: 2px solid green;
-    height: 40vh;
-    width: 25%;
+.planCard,
+.reasonCard{
+    /* border: 2px solid green; */
+    height: 38vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between; 
+    padding: 1.8rem 1rem 1rem;
+    /* border-radius: 20px; */
+    /* border: 2px solid rgba(255, 255, 255, 0.2); */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+
+.planCard h2{
+    margin-left: 0%;
+    font-size: 1.5rem;
+}
+
+.planCard h4{
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    color: #BCC6DA;
+}
+
+.planCard p{
+    font-size: 0.85rem;
+    color: #BCC6DA;
+}
+
+.reasonCard p{
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #ABABAB;
+}
+
+.planCard1{
+    background: linear-gradient(149deg, #1C4072 6.96%, #172B47 40.17%, #120c1f 73.39%);
+}
+
+.planCard2{
+    background: linear-gradient(149deg, #1D529D 6.96%, #233371 40.17%, #120c1f 73.39%);
+}
+
+.planCard3{
+    background: linear-gradient(149deg, #792A95 6.96%, #38216C 40.17%, #120c1f 73.39%);
+}
+
+.planCard4{
+    background: linear-gradient(149deg, #922556 6.96%, #391945 40.17%, #120c1f 73.39%);
+}
+
+.reasonCard{
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: #272727;
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+}
+
+.reasonCardLowerContent{
+    display: flex;
+    justify-content: end;
+}
+
+.reasonCardLowerContent svg{
+    height: 50px;
+    width: 50px;
 }
