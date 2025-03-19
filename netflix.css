@@ -132,8 +132,6 @@ nav{
     position: relative;
 }
 
-
-
 .overlay{
     height: 100%;
     width: 100%;
@@ -164,7 +162,8 @@ nav{
 
 .bannerContainer h4{
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 400;
+    /* font-weight: bold; */
     margin: 0px;
 }
 
@@ -208,6 +207,7 @@ nav{
 
 .carouselSection,
 .planSection,
+.faqSection,
 .reasonToJoinContainer{
     /* border: 2px solid red; */
     color: white;
@@ -221,7 +221,8 @@ nav{
     color: #B9ACAE;
 }
 
-.reasonToJoinSection h2{
+.reasonToJoinSection h2,
+.faqSection h2{
     /* border: 2px solid red; */
     margin-left: 5rem;
     font-size: 1.3rem;
@@ -236,6 +237,7 @@ nav{
     font-size: 1.6rem;
     margin-left: 55px;
 }
+
 
 .carouselCardContainer,
 .plansContainer,
@@ -278,6 +280,11 @@ nav{
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+.carouselCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.28s ease-in-out;
 }
 
 .planCard,
@@ -340,6 +347,13 @@ nav{
     backdrop-filter: blur(12px);
 }
 
+.planCard:hover {
+    transform: scale(1.01);
+    transition: transform 0.28s ease-in-out;
+    filter: brightness(1.2);
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
 .reasonCardLowerContent{
     display: flex;
     justify-content: end;
@@ -349,3 +363,80 @@ nav{
     height: 50px;
     width: 50px;
 }
+
+/* .faqCard{
+    /* border: 2px solid red;
+    } */
+    
+.faqCardsContainer{
+    height: 100%;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    flex-direction: column;
+}
+    
+.faqQuestion,
+.faqAnswer{
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    background-color:rgba(39, 39, 39, 1);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.04);
+}
+
+.faqQuestion p,
+.faqAnswer p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.faqQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.faqQuestion span{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.faqAnswer{
+    display: none;
+}
+
+.faqCards:hover{
+    cursor: pointer;
+}
+
+.faqQuestion:hover ~ .faqAnswer {
+    display: block;
+    cursor: pointer;
+}
+
+.faqQuestion:hover{
+    filter: brightness(1.5);
+}
+
+/* .faqAnswer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.faqCards:hover {
+    cursor: pointer;
+}
+
+.faqQuestion:hover ~ .faqAnswer {
+    max-height: 500px; /* Adjust based on content
+    opacity: 1;
+}
+
+.faqQuestion:hover {
+    filter: brightness(1.5);
+} */
